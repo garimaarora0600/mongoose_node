@@ -1,2 +1,4 @@
 const mongoose=require('mongoose');
 mongoose.connect("mongodb://localhost:27017/students")
+
+console.log('db connected')

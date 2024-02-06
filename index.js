@@ -1,10 +1,14 @@
 const express=require('express');
-const mongoose=require('mongoose')
-const UserRouter=require('./router');
+const  router  = require('./route/user');
+// const UserRouter=require('./route/router');
+console.log("hello")
+// const UserRouter = require('./route/user');
+
 const app=express();
 app.use(express.json());
-app.use('/',UserRouter);
+app.use('/',router);
 
 app.listen(3000,()=>{
     require('./config');
 })
+// app.listen()
